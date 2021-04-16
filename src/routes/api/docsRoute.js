@@ -20,7 +20,7 @@ docsRoute.post(
 docsRoute.get("/", DocController.getAllDocs);
 
 // Get specific doc
-docsRoute.get("/:id", docsExists, verifyToken, DocController.getSpecificDoc);
+docsRoute.get("/:id", docsExists, DocController.getSpecificDoc);
 
 // Edit specific doc
 docsRoute.patch(
